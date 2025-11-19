@@ -57,6 +57,6 @@ function showAnswer(){
     }
     else if(oper == '1/'){
        inp1.value = secondInp + '1/' + display.value + '=';
-        display.value =1/zNumber(display.value) 
+        display.value =1/Number(display.value) 
     }
 }
