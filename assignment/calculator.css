@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cal-container{
+    width: 300px;
+    height: 470px;
+    background-color: bisque;
+    margin: auto;
+    margin-top: 4em;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 2px #d1cece;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: .5em;
+}
+.top-left{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+.top-right{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1em;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding-top: 1em;
+}
+.second-left{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.second-left p{
+    font-weight: 700;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+    margin: auto;
+    padding-top: 2.5em;
+}
+.put{
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 1em;
+}
+.operators{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 99%;
+    margin: auto;
+    justify-items: center;
+    /* align-items: center; */
+    padding-top: 1em;
+    gap: .1em;
+}
+.bt{
+    border: 1.4px solid green;
+    background-color: azure;
+    width: 65px;
+    height: 40px;
+    border-radius: 3px;
+}
+#display{
+    text-align: right;
+}
+#inp1{
+    text-align: right;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./ass4.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../images/y logo.png" width="60px" alt="">
+            </div>
+            <ul class="menu-list" id="list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+            <button class="btn" id="press"><a href="">Sign up</a></button>
+            <div class="icon" id="icons">
+                <i class="fa-solid fa-bars" onclick="log()" id="bar"></i>
+                <i class="fa-solid fa-xmark" onclick="log()" id="mark"></i>
+            </div>
+        </nav>
+    </header>
+    <input oninput="showText()"  type="text" id="input">
+    <p id="output"></p>
+
+</body>
+<script src="./ass4.js"></script>
+</html>

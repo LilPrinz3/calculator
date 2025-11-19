@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./ass4.css">
+</head>
+<body>
+    <div class="cal-container">
+        <div class="top">
+            <div class="top-left">
+              <i class="fa-solid fa-calculator"></i>
+              <p>calculator</p>  
+            </div>
+            <div class="top-right">
+                <i class="fa-solid fa-file"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="second">
+            <div class="second-left">
+                <i class="fa-solid fa-bars"></i>
+                <p>Standard</p>
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-ban"></i>
+            </div>
+        </div>
+        <div class="show" id="dis">
+            <input type="text" class="put" id="inp1">
+            <input type="text" class="put" id="display">
+        </div>
+        <div class="text">
+            <P>MC</P>
+            <P>MR</P>
+            <P>M+</P>
+            <P>M-</P>
+            <P>MS</P>
+            <p>M-</p>
+        </div>
+        <div class="operators">
+            <button class="bt" onclick="operator('%')" id="">%</button>
+            <button class="bt" onclick="clearAll()" id="clr">CE</button>
+            <button class="bt" onclick="clearPart()">C</button>
+            <button class="bt" onclick="deleteLast()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="bt" onclick="operator('1/')" id="bts">1/</button>
+            <button class="bt" onclick="operator('^')" id="">^</button>
+            <button class="bt" onclick="operator('✓')"id=''>✓</button>
+            <button class="bt" onclick="operator('÷')" id="">÷</button>
+            <button class="bt" onclick="showText(7)" id="bts">7</button>
+            <button class="bt" onclick="showText(8)" id="bts">8</button>
+            <button class="bt" onclick="showText(9)" id="bts">9</button>
+            <button class="bt" onclick="operator('x')" id="bts">x</button>
+            <button class="bt" onclick="showText(4)" id="bts">4</button>
+            <button class="bt" onclick="showText(5)" id="bts">5</button>
+            <button class="bt" onclick="showText(6)" id="bts">6</button>
+            <button class="bt" onclick="operator('-')" id="">-</button>
+            <button class="bt" onclick="showText(1)" id="bts">1</button>
+            <button class="bt" onclick="showText(2)" id="bts">2</button>
+            <button class="bt" onclick="showText(3)" id="bts">3</button>
+            <button class="bt" onclick="operator('+')" id="">+</button>
+            <button class="bt" onclick="operator('+-')" id=""><i class="fa-solid fa-plus-minus"></i></button>
+            <button class="bt" onclick="showText(0)" id="bts">0</button>
+            <button class="bt" onclick="showText('.')" id="bts">.</button>
+            <button class="bt" onclick="showAnswer('=')" id="">=</button>
+        </div>
+    </div>
+</body>
+<script src="./calculator.js"></script>
+</html>
