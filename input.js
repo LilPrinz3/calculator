@@ -1,32 +1,40 @@
 let detailsArr = [];
 let user
 let input;
-function show(){
+function show() {
     input = '';
-    input = document.getElementById('input').value;  
+    input = document.getElementById('input').value;
 }
 
-function add(){
+function add() {
     input = document.getElementById('input')
     let value = input.value;
-    
-    input.value ='';
-console.log(value);
+    let check = detailsArr.find((item)=> item.value.toLowerCase() === value.toLowerCase())
+    if(check){
+        error.innerHTML = `already used`
+    }
+    else{
+       input.value = '';
+   console.log(value);
+   
+    user = {
+        value: value
+    };
 
- user = {
-    value: value
-};
-detailsArr.push(user)
-updateUI()
+    detailsArr.push(user);
+    error.innerHTML = ''
+    updateUI()
+    }
+   
 }
 
-function updateUI(){
+function updateUI() {
     let output = document.getElementById('output')
     output.innerHTML = '';
-    detailsArr.forEach((items, index)=>{
-        output.innerHTML +=`
-        <p>
-            ${index + 1}
+    detailsArr.forEach((items, index) => {
+        output.innerHTML += `
+        <p class = 'tet'>
+            ${index + 1} 
             ${items.value}
             <button class="delt" onclick='dele(${index})'>Delete</button>
         </p>
@@ -34,11 +42,12 @@ function updateUI(){
         
         
         `
-})
+    })
 }
 
-function dele(minus){
+function dele(minus) {
     detailsArr.splice(minus, 1)
     updateUI();
 
 }
+
